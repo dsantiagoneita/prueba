@@ -1,0 +1,11 @@
+package com.neita.neita.repository;
+
+import com.neita.neita.entity.Servicio;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ServicioRepository extends JpaRepository<Servicio, Integer> {
+	// Puedes agregar métodos como: List<Servicio> findByPrecioGreaterThan(Double
+	// precio);
+}
